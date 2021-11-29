@@ -3,4 +3,4 @@ COPY . /srv/devalore
 WORKDIR /srv/devalore
 RUN pip install --no-cache-dir -r requirements.txt
 RUN ls -la
-CMD pytest -v
+CMD python devalore_assingment.py
