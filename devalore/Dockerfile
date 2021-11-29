@@ -2,5 +2,4 @@ FROM python:3.9-slim
 COPY . /srv/devalore
 WORKDIR /srv/devalore
 RUN pip install --no-cache-dir -r requirements.txt
-RUN ls -la
-CMD python devalore_assingment.py
+CMD pytest
